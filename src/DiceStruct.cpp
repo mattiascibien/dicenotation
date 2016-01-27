@@ -1,0 +1,1 @@
+#include <dicenotation/DiceStruct.h>
