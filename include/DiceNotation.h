@@ -4,9 +4,9 @@
 #	define DICENOTATION_API 
 #else
 #	ifdef DICENOTATION_EXPORTS
-#		define DICENOTATION_API __cdecl(dllexport)
+#		define DICENOTATION_API _declspec(dllexport)
 #	else
-#		define DICENOTATION_API __cdecl(dllimport)
+#		define DICENOTATION_API _declspec(dllimport)
 #	endif
 #endif
 
