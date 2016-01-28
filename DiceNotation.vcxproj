@@ -89,6 +89,9 @@
     <ClInclude Include="include\dicenotation\interfaces\IDiceRoller.h" />
     <ClInclude Include="include\dicenotation\parser\DiceParser.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DiceNotation.licenseheader" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>

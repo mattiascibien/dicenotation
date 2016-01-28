@@ -51,4 +51,7 @@
       <Filter>Header Files\dicenotation\interfaces</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DiceNotation.licenseheader" />
+  </ItemGroup>
 </Project>
