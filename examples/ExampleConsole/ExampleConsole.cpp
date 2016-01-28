@@ -9,7 +9,7 @@
 
 int main()
 {
-	IDiceParser *parser = new DiceStringParser("1d5+1");
+	IDiceParser *parser = new DiceStringParser("3d5-4");
 	DiceStruct* test = DiceStruct::parse(parser);
     return 0;
 }
