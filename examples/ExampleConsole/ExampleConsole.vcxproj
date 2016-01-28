@@ -153,6 +153,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\StdRandomRoller.cpp" />
     <ClCompile Include="ExampleConsole.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

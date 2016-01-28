@@ -55,5 +55,5 @@
 #endif // DICENOTATION_STATIC
 
 #include <dicenotation/interfaces/IDiceParser.h>
+#include <dicenotation/interfaces/IDiceRoller.h>
 #include <dicenotation/DiceStruct.h>
-

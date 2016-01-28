@@ -2,6 +2,8 @@
 
 #include <regex>
 
+#define REGEX_STRING "([0-9]+)d([0-9]+)([+-]){0,1}([0-9]+){0,1}"
+
 DiceStringParser::DiceStringParser(std::string str)
 {
 	m_str = str;
@@ -14,7 +16,7 @@ DiceStringParser::~DiceStringParser()
 DiceStruct* DiceStringParser::parse()
 {
 	DiceStruct *returnValue = nullptr;
-	std::regex rx(m_regex_str, std::regex_constants::ECMAScript);
+	std::regex rx(REGEX_STRING, std::regex_constants::ECMAScript);
 
 	std::smatch result;
 	if (std::regex_match(m_str, result, rx, std::regex_constants::match_continuous))

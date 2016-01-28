@@ -22,6 +22,9 @@
     <Filter Include="Header Files\dicenotation\interfaces">
       <UniqueIdentifier>{ecddcbff-63d5-4acb-94ad-5feecaf35de8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\dicenotation\roller">
+      <UniqueIdentifier>{0257be49-ef94-49f0-942c-5d30adad773d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DiceStruct.cpp">
@@ -31,6 +34,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\IDiceParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DiceNotation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -49,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="include\dicenotation\interfaces\IDiceRoller.h">
       <Filter>Header Files\dicenotation\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dicenotation\roller\StdRandomRoller.h">
+      <Filter>Header Files\dicenotation\roller</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

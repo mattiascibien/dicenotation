@@ -25,7 +25,7 @@ class DiceStruct;
 class IDiceParser
 {
 protected:
-	DiceStruct* createDiceStruct(int numberOfDices,	int facesOfDice, bool modifier, int modifierValue);
+	virtual DiceStruct* createDiceStruct(int numberOfDices,	int facesOfDice, bool modifier, int modifierValue) final;
 public:
 	virtual DiceStruct* parse() = 0;
 };

@@ -23,6 +23,7 @@
 #include <DiceNotation.h>
 
 class IDiceParser;
+class IDiceRoller;
 
 class DICENOTATION_API DiceStruct
 {
@@ -30,7 +31,7 @@ class DICENOTATION_API DiceStruct
 public:
 	static DiceStruct* parse(IDiceParser* parser);
 
-	int roll();
+	int roll(IDiceRoller* roller);
 private:
 	DiceStruct() { }
 
