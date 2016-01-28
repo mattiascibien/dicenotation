@@ -16,9 +16,21 @@
     <Filter Include="Header Files\dicenotation">
       <UniqueIdentifier>{cca510b5-ba20-4abb-86c6-63065a8d9f66}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\dicenotation\parser">
+      <UniqueIdentifier>{3a85c156-29e3-43e6-a477-2054703b86fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\dicenotation\interfaces">
+      <UniqueIdentifier>{ecddcbff-63d5-4acb-94ad-5feecaf35de8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DiceStruct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DiceParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\dicenotation\interfaces\IDiceParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -28,6 +40,15 @@
     </ClInclude>
     <ClInclude Include="include\dicenotation\DiceStruct.h">
       <Filter>Header Files\dicenotation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dicenotation\parser\DiceParser.h">
+      <Filter>Header Files\dicenotation\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dicenotation\interfaces\IDiceParser.h">
+      <Filter>Header Files\dicenotation\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dicenotation\interfaces\IDiceRoller.h">
+      <Filter>Header Files\dicenotation\interfaces</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -10,4 +10,6 @@
 #	endif
 #endif
 
+#include <dicenotation/interfaces/IDiceParser.h>
 #include <dicenotation/DiceStruct.h>
+
