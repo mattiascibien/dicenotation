@@ -82,6 +82,7 @@
     <ClCompile Include="src\DiceParser.cpp" />
     <ClCompile Include="src\DiceStruct.cpp" />
     <ClCompile Include="src\IDiceParser.cpp" />
+    <ClCompile Include="src\StdRandomRoller.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\DiceNotation.h" />

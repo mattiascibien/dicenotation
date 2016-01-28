@@ -15,7 +15,7 @@ DiceStringParser::~DiceStringParser()
 
 DiceStruct* DiceStringParser::parse()
 {
-	DiceStruct *returnValue = nullptr;
+	DiceStruct* returnValue = nullptr;
 	std::regex rx(REGEX_STRING, std::regex_constants::ECMAScript);
 
 	std::smatch result;
@@ -28,7 +28,7 @@ DiceStruct* DiceStringParser::parse()
 		int modifierValue = stoi(result[4].str());
 		bool modifier = result[3].str() == "+";
 
-		IDiceParser::createDiceStruct(numberOfDices, facesOfDice, modifier, modifierValue);
+		returnValue = IDiceParser::createDiceStruct(numberOfDices, facesOfDice, modifier, modifierValue);
 	}
 	
 	return returnValue; 

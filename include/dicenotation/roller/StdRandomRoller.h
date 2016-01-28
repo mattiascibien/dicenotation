@@ -20,8 +20,21 @@
 
 #pragma once
 
-class IDiceRoller
+#include <dicenotation/interfaces/IDiceRoller.h>
+
+class DiceStruct;
+
+class StdRandomRoller : public IDiceRoller
 {
 public:
-	virtual int roll(int numberOfFaces) = 0;
+	StdRandomRoller();
+
+	~StdRandomRoller();
+
+	int roll(int numberOfFaces) override;
+
+	void seed();
+	void seed(int seed);
+private:
+
 };
