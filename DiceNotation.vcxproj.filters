@@ -30,7 +30,7 @@
     <ClCompile Include="src\DiceParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="include\dicenotation\interfaces\IDiceParser.cpp">
+    <ClCompile Include="src\IDiceParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

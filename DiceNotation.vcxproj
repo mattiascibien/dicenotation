@@ -78,9 +78,9 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="include\dicenotation\interfaces\IDiceParser.cpp" />
     <ClCompile Include="src\DiceParser.cpp" />
     <ClCompile Include="src\DiceStruct.cpp" />
+    <ClCompile Include="src\IDiceParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\DiceNotation.h" />
