@@ -20,8 +20,16 @@
 
 #pragma once
 
+/// <summary>
+/// The interface for implementing a dice roller, which is a random number generator
+/// </summary>
 class IDiceRoller
 {
 public:
+	/// <summary>
+	/// Rolls a die with the specified number of faces.
+	/// </summary>
+	/// <param name="numberOfFaces">The number of faces.</param>
+	/// <returns></returns>
 	virtual int roll(int numberOfFaces) = 0;
 };

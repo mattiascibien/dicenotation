@@ -25,12 +25,24 @@
 
 #include <string>
 
+/// <summary>
+/// The default dice parser.
+/// </summary>
+/// <seealso cref="IDiceParser" />
 class DiceStringParser : public IDiceParser
 {
 public:
+	/// <summary>
+	/// Initializes a new instance of the <see cref="DiceStringParser"/> class.
+	/// </summary>
+	/// <param name="str">The string in standard dice notation form.</param>
 	DiceStringParser(std::string str);
 	~DiceStringParser();
 
+	/// <summary>
+	/// Parses this instance.
+	/// </summary>
+	/// <returns></returns>
 	virtual DiceStruct* parse() override;
 
 private:

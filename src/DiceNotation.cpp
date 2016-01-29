@@ -3,7 +3,7 @@
 #include <dicenotation/parser/DiceParser.h>
 #include <dicenotation/roller/StdRandomRoller.h>
 
-int rollDice(const char* string)
+int DiceNotation::rollDice(const char* string)
 {
 	IDiceParser *parser = new DiceStringParser(string);
 	IDiceRoller *roller = new StdRandomRoller();

@@ -58,5 +58,12 @@
 #include <dicenotation/interfaces/IDiceRoller.h>
 #include <dicenotation/DiceStruct.h>
 
-
-int rollDice(const char* string);
+namespace DiceNotation
+{
+	/// <summary>
+	/// Rolls the dice specified in standard dice notation.
+	/// </summary>
+	/// <param name="string">The string in standard dice notation.</param>
+	/// <returns></returns>
+	int rollDice(const char* string);
+}

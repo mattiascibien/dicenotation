@@ -22,10 +22,25 @@
 
 class DiceStruct;
 
+/// <summary>
+/// Interface for implementing a parser. Derived classes must implement the parse() method.
+/// </summary>
 class IDiceParser
 {
 protected:
-	virtual DiceStruct* createDiceStruct(int numberOfDices,	int facesOfDice, bool modifier, int modifierValue) final;
+	/// <summary>
+	/// Creates the dice structure. It is used by derived classes to construct a DiceStruct, which has a private constructor
+	/// </summary>
+	/// <param name="numberOfDices">The number of dices.</param>
+	/// <param name="facesOfDice">The faces of dice.</param>
+	/// <param name="modifier">if set to <c>true</c> [modifier].</param>
+	/// <param name="modifierValue">The modifier value.</param>
+	/// <returns></returns>
+	virtual DiceStruct* createDiceStruct(int numberOfDices, int facesOfDice, bool modifier, int modifierValue) final;
 public:
+	/// <summary>
+	/// Parses a instance.
+	/// </summary>
+	/// <returns>The parsed DiceStruct</returns>
 	virtual DiceStruct* parse() = 0;
 };

@@ -24,6 +24,10 @@
 
 class DiceStruct;
 
+/// <summary>
+/// The standard dice roller
+/// </summary>
+/// <seealso cref="IDiceRoller" />
 class StdRandomRoller : public IDiceRoller
 {
 public:

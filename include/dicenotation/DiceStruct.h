@@ -25,12 +25,25 @@
 class IDiceParser;
 class IDiceRoller;
 
+/// <summary>
+/// The main class used to parse and roll dices.
+/// </summary>
 class DICENOTATION_API DiceStruct
 {
 	friend class IDiceParser;
 public:
+	/// <summary>
+	/// Parses a struct using specified parser.
+	/// </summary>
+	/// <param name="parser">The parser.</param>
+	/// <returns></returns>
 	static DiceStruct* parse(IDiceParser* parser);
 
+	/// <summary>
+	/// Rolls the dices using the specified roller.
+	/// </summary>
+	/// <param name="roller">The roller.</param>
+	/// <returns></returns>
 	int roll(IDiceRoller* roller);
 private:
 	DiceStruct() { }
