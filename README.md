@@ -11,7 +11,7 @@ Include the header file for DiceNotation
 
 You can then use the `rollDice(const char*)` function to roll a dice.
 ```cpp
-int result = rollDice(2d10+5) + rollDice(1d6-2);
+int result = rollDice("2d10+5") + rollDice("1d6-2");
 ```
 
 ## Advanced Usage
