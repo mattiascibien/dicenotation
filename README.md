@@ -24,4 +24,4 @@ At the moment only a Visual C++ 2015 solution is provided. The code is cross pla
 
 ## Contributing
 
-You are free to contribute the code to this repository. As soon as the first stable version is reached (0.1) the GitFlow branching model.
+You are free to contribute the code to this repository. As soon as the first stable version is reached (0.1) the GitFlow branching model will be adopted.
