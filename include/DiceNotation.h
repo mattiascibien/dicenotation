@@ -57,3 +57,6 @@
 #include <dicenotation/interfaces/IDiceParser.h>
 #include <dicenotation/interfaces/IDiceRoller.h>
 #include <dicenotation/DiceStruct.h>
+
+
+int rollDice(const char* string);
