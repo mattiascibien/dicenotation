@@ -280,3 +280,5 @@ install_manifest.txt
 
 # Doxygen
 docs/
+
+build/
