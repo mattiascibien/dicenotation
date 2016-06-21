@@ -15,4 +15,4 @@ endforeach(filename ${SOURCES})
 
 
 add_library(${PRJ_NAME}-static STATIC ${OBJECTS})
-add_library(${PRJ_NAME}-shared SHARED ${OBJECTS})
+#add_library(${PRJ_NAME}-shared SHARED ${OBJECTS})

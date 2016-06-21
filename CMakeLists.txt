@@ -12,6 +12,7 @@ set(INCLUDE_DIR "include")
 
 project(${PRJ_NAME})
 
+include_directories(${INCLUDE_DIR})
 add_subdirectory(src)
 #add_subdirectory(tests)
 
