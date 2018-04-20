@@ -24,7 +24,7 @@ before_build:
     cmake --version
     cmake .. -G Ninja -DBUILD_SHARED_LIBS=%SHARED%
 
-build:
+build_script:
   - cmd: cmake . --build
 
 only_commits:
