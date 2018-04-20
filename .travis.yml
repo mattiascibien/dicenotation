@@ -1,0 +1,16 @@
+language: cpp
+
+env:
+  - SHARED=1
+  - SHARED=0
+
+compiler:
+  - gcc
+  - clang
+
+before_script:
+  - mkdir build
+  - cd build
+  - cmake .. -DBUILD_SHARED_LIBS=$SHARED
+
+script: make # && make test
