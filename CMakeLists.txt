@@ -1,20 +1,33 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.5)
+project(dicenotation VERSION 1.0.0 LANGUAGES CXX)
 
-#set project name
-set(PRJ_NAME DiceNotation)
+add_library(dicenotation
+	src/DiceNotation.cpp
+	src/DiceParser.cpp
+	src/DiceStruct.cpp
+	src/IDiceParser.cpp
+	src/StdRandomRoller.cpp
+)
 
-#libraries to link
-set(LINK_LIBS "")
-#define cflags
-set(CFLAGS "")
-#define header include directories as list
-set(INCLUDE_DIR "include")
+if ( )
 
-project(${PRJ_NAME})
+add_library(DiceNotation::dicenotation ALIAS dicenotation)
 
-include_directories(${INCLUDE_DIR})
-add_subdirectory(src)
-#add_subdirectory(tests)
+target_include_directories(dicenotation
+	PUBLIC
+		$<INSTALL_INTERFACE:include>
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+	PRIVATE
+		${CMAKE_CURRENT_SOURCE_DIR}/src
+)
 
-#set enable testing
-#enable_testing()
+include(GNUInstallDirs)
+
+install(TARGETS dicenotation
+	EXPORT dicenotation-targets
+	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
+
+
+set_target_properties(dicenotation PROPERTIES EXPORT_NAME DiceNotation)
