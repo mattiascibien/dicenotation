@@ -1,4 +1,4 @@
-# DiceNotation
+# DiceNotation [![Build Status](https://travis-ci.org/mattiascibien/DiceNotation.svg?branch=master)](https://travis-ci.org/mattiascibien/DiceNotation)
 
 [Standard Dice Notation](https://en.wikipedia.org/wiki/Dice_notation#Standard_notation) for C/C++.
 
@@ -20,7 +20,15 @@ It is possibile to customize the behavior of the library by extending the parser
 
 ## Building
 
-At the moment only a Visual C++ 2015 solution is provided. The code is cross platform so you can include the `.h` and the `.cpp` in your source code to compile. Remember to add the `DICENOTATION_STATIC` definition to your compiler if you use a static library or embed the source code.
+In order to build the solution `cmake >= 3.5` is required to build the solution. The option `BUILD_SHARED_LIBS` determines wether a shared (DLL on Windows) or static library is built.
+
+It is also possible to drop the `.cpp` and `.h` files alongside your existing source code (be sure to define `DICENOTATION_STATIC` in your compile options).
+
+The library is being tested on the following compilers:
+
+ * Visual C++ 2017
+ * GCC
+ * Clang
 
 ## Contributing
 
