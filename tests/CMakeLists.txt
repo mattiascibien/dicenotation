@@ -3,7 +3,7 @@ enable_testing()
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 #I like to keep test files in a separate source directory called test
-file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} test/*.cpp)
+file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp)
 
 #Run through each source
 foreach(testSrc ${TEST_SRCS})
@@ -14,7 +14,7 @@ foreach(testSrc ${TEST_SRCS})
         add_executable(${testName} ${testSrc})
 
         target_include_directories (${testName} ${Boost_INCLUDE_DIRS})
-        
+
         #link to Boost libraries AND your targets and dependencies
         target_link_libraries(${testName} ${Boost_LIBRARIES} DiceNotation::dicenotation)
 
