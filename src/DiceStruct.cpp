@@ -1,6 +1,8 @@
 #include <dicenotation/DiceStruct.h>
 #include <dicenotation/interfaces/IDiceRoller.h>
 
+#include <stddef.h>
+
 DiceStruct* DiceStruct::parse(IDiceParser* parser)
 {
 	return parser->parse();
