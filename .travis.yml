@@ -15,7 +15,7 @@ compiler:
 before_script:
   - mkdir build
   - cd build
-  - cmake .. -DBUILD_SHARED_LIBS=$SHARED -DENABLE_TESTS
+  - cmake .. -DBUILD_SHARED_LIBS=$SHARED -DENABLE_TESTS=1
 
 addons:
   apt:
