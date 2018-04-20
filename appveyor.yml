@@ -9,12 +9,14 @@ configuration:
 - Debug
 platform:
 - x64
-- x86
 environment:
   matrix:
-  - arch: Win64
+    - arch: Win64
+    - SHARED: 1
+    - SHARED: 0
   # - arch: #does not work, Release|x64 not a valid target
 matrix:
+
   fast_finish: true
 
 # skip unsupported combinations
@@ -33,7 +35,7 @@ before_build:
     mkdir build
     cd build
     cmake --version
-    cmake .. -G %generator%
+    cmake .. -G %generator% -DBUILD_SHARED_LIBS=%SHARED%
 
 build:
   project: c:\projects\dicenotation\build\dicenotation.sln
