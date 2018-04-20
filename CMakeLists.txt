@@ -9,7 +9,9 @@ add_library(dicenotation
 	src/StdRandomRoller.cpp
 )
 
-if ( )
+if ( NOT BUIILD_SHARED_LIBS )
+	add_definitions( -DDICENOTATION_STATIC )
+endif()
 
 add_library(DiceNotation::dicenotation ALIAS dicenotation)
 
