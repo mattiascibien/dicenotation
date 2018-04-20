@@ -17,4 +17,9 @@ before_script:
   - cd build
   - cmake .. -DBUILD_SHARED_LIBS=$SHARED
 
+addons:
+  apt:
+    packages:
+      - libboost-test-dev
+
 script: make # && make test
