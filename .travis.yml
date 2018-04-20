@@ -1,5 +1,9 @@
 language: cpp
 
+os:
+  - linux
+  - osx
+
 env:
   - SHARED=1
   - SHARED=0
