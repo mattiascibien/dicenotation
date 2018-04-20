@@ -13,7 +13,7 @@ foreach(testSrc ${TEST_SRCS})
         #Add compile target
         add_executable(${testName} ${testSrc})
 
-        target_include_directories (${testName} ${Boost_INCLUDE_DIRS})
+        target_include_directories (${testName} PRIVATE ${Boost_INCLUDE_DIRS})
 
         #link to Boost libraries AND your targets and dependencies
         target_link_libraries(${testName} ${Boost_LIBRARIES} DiceNotation::dicenotation)
