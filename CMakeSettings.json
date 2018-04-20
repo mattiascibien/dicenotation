@@ -1,0 +1,93 @@
+{
+	// See https://go.microsoft.com//fwlink//?linkid=834763 for more information about this file.
+	"configurations": [
+		{
+			"name": "x86-Debug-Shared",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [ "msvc_x86" ],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "-DBUILD_SHARED_LIBS:BOOL=ON",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		},
+		{
+			"name": "x86-Release-Shared",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [ "msvc_x86" ],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "-DBUILD_SHARED_LIBS:BOOL=ON",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		},
+		{
+			"name": "x86-Debug-Static",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [ "msvc_x86" ],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "-DBUILD_SHARED_LIBS:BOOL=OFF",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		},
+		{
+			"name": "x86-Release-Static",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [ "msvc_x86" ],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "-DBUILD_SHARED_LIBS:BOOL=OFF",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		},
+		{
+			"name": "x64-Debug-Shared",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [ "msvc_x64_x64" ],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "-DBUILD_SHARED_LIBS:BOOL=ON",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		},
+		{
+			"name": "x64-Release-Shared",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [ "msvc_x64_x64" ],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "-DBUILD_SHARED_LIBS:BOOL=ON",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		},
+		{
+			"name": "x64-Debug-Static",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [ "msvc_x64_x64" ],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "-DBUILD_SHARED_LIBS:BOOL=ON",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		},
+		{
+			"name": "x64-Release-Static",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [ "msvc_x64_x64" ],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "-DBUILD_SHARED_LIBS:BOOL=ON",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		}
+	]
+}
