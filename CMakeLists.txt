@@ -4,6 +4,8 @@ project(dicenotation VERSION 1.0.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+option(ENABLE_TESTS "Enables the test" 0)
+
 add_library(dicenotation
 	src/DiceNotation.cpp
 	src/DiceParser.cpp
@@ -36,3 +38,7 @@ install(TARGETS dicenotation
 
 
 set_target_properties(dicenotation PROPERTIES EXPORT_NAME DiceNotation)
+
+if(ENABLE_TESTS)
+	add_subdirectory(tests)
+endif()

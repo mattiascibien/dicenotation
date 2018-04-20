@@ -15,11 +15,11 @@ compiler:
 before_script:
   - mkdir build
   - cd build
-  - cmake .. -DBUILD_SHARED_LIBS=$SHARED
+  - cmake .. -DBUILD_SHARED_LIBS=$SHARED -DENABLE_TESTS
 
 addons:
   apt:
     packages:
       - libboost-test-dev
 
-script: make # && make test
+script: make && make test
