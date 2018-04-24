@@ -20,9 +20,9 @@ It is possibile to customize the behavior of the library by extending the parser
 
 ## Building
 
-In order to build the solution `cmake >= 3.5` is required to build the solution. The option `BUILD_SHARED_LIBS` determines wether a shared (DLL on Windows) or static library is built.
+In order to build the solution `cmake >= 3.5` is required. The option `BUILD_SHARED_LIBS` determines wether a shared (DLL on Windows) or static library is built.
 
-It is also possible to drop the `.cpp` and `.h` files alongside your existing source code (be sure to define `DICENOTATION_STATIC` in your compile options).
+It is also possible to drop the `.cpp` and `.h` files alongside your existing source code (be sure to define `DICENOTATION_STATIC` in your compile options) and configure your build system to include those files.
 
 The library is being tested on the following compilers:
 
