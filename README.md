@@ -1,4 +1,4 @@
-# DiceNotation [![Build Status](https://travis-ci.org/mattiascibien/DiceNotation.svg?branch=master)](https://travis-ci.org/mattiascibien/DiceNotation)
+# DiceNotation [![Build Status](https://travis-ci.org/mattiascibien/dicenotation.svg?branch=master)](https://travis-ci.org/mattiascibien/dicenotation)
 
 [Standard Dice Notation](https://en.wikipedia.org/wiki/Dice_notation#Standard_notation) for C/C++.
 
