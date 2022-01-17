@@ -2,6 +2,8 @@
 
 [Standard Dice Notation](https://en.wikipedia.org/wiki/Dice_notation#Standard_notation) for C/C++.
 
+> **⚠️ Warning: this library does not work and it has been deprecated in favour of [dicenotation-rs](https://github.com/mattiascibien/dicenotation-rs) which can be used in other languages after version v0.2.0.**
+
 ## Usage
 
 Include the header file for DiceNotation
